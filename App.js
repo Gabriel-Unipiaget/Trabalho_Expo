@@ -1,20 +1,51 @@
+import styles from './css/style';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, Text, View, Image } from 'react-native';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+    <SafeAreaView style={styles.container}>
       <StatusBar style="auto" />
-    </View>
+
+      <View style={styles.containerMain}>
+        <Image style={styles.imageWoman} source={require('./img/mulher.png')}/>
+      </View>
+
+      <View style={styles.containerGrid}>
+
+        <View style={styles.containerItem}>
+          <View style={styles.containerIcons}>
+            <Image source={require('./img/sobre.png')} />
+          </View>
+          <Text style={styles.textDefault} >SOBRE NÓS</Text>
+        </View>
+
+        <View style={styles.containerItem}>
+          <View style={styles.containerIcons}>
+            <Image source={require('./img/servicos.png')} />
+          </View>
+          <Text style={styles.textDefault}>SERVIÇOS</Text>
+        </View>
+
+      </View>
+
+      <View style={styles.containerGrid}>
+
+        <View style={styles.containerItem}>
+          <View style={styles.containerIcons}>
+            <Image source={require('./img/precos.png')} />
+          </View>
+          <Text style={styles.textDefault}>PREÇOS</Text>
+        </View>
+
+        <View style={styles.containerItem}>
+          <View style={styles.containerIcons}>
+            <Image source={require('./img/promocoes.png')} />
+          </View>
+          <Text style={styles.textDefault}>PROMOÇÕES</Text>
+        </View>
+
+      </View>
+    </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
