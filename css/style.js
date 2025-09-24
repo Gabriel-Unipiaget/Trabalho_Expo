@@ -16,11 +16,11 @@ const styles = StyleSheet.create({
     imageWoman:{
         width: 300,
         height: 400,
-        borderRadius: 200,
+        borderRadius: 130,
     },
     containerGrid:{
         width: '90%',
-        height: 200,
+        height: 150,
         display: 'flex',
         flexDirection:'row',
         alignItems: 'center',
