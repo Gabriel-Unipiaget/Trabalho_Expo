@@ -6,17 +6,16 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: '#BF99B1'
-    },
-    containerMain:{
-        display: 'flex',
-        borderRadius: '42%',
-        backgroundColor: '#806074b9'
+        backgroundColor: '#F9F6F2'
     },
     imageWoman:{
         width: 300,
         height: 400,
         borderRadius: 130,
+    },
+    textTitulo: {
+        color: '#000',
+        fontSize: 18,
     },
     containerGrid:{
         width: '90%',
@@ -35,7 +34,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         borderRadius: 10,
-        backgroundColor: '#E7CAE0'
+        backgroundColor: '#2B2016'
     },
     containerIcons:{
         padding: 20,
@@ -43,10 +42,10 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         borderRadius: 100,
-        backgroundColor: '#D77081'
+        backgroundColor: '#6A5137'
     },
     textDefault:{
-        color: '#444'
+        color: '#F9F6F2'
     }
 });
 
